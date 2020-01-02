@@ -14,5 +14,5 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('transactionexport','TransactionController@export');
+Route::get('transactionsexport','TransactionController@export')->name('transactionsexport');
 Route::get('transactions','TransactionController@index');

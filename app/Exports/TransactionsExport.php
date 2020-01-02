@@ -36,17 +36,7 @@ class TransactionsExport implements FromCollection,WithHeadings,ShouldAutoSize,W
                 $spreadsheet->getDefaultStyle()->getFont()->setName('Arial');
                 $spreadsheet->getDefaultStyle()->getFont()->setSize(8);
                 $spreadsheet->getDefaultStyle()->getFont()->setSize(8);
-                $styleArray = [
-                    'borders' => [
-                        'outline' => [
-                            'borderStyle' => Borders::DIAGONAL_BOTH,
-//                                \PhpOffice\PhpSpreadsheet\Style\Border::BORDER_THICK,
-                            'color' => ['argb' => 'FFFF00FF'],
-                        ],
-                    ],
-                ];
-                $worksheet=$event->sheet;
-                $spreadsheet->getStyle('B2:G8')->applyFromArray($styleArray);
+
             },
         ];
     }
