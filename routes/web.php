@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('transactionexport','TransactionController@export');
+Route::get('transactions','TransactionController@index');
